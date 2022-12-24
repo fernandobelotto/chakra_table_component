@@ -1,4 +1,4 @@
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Center, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import ChakraTable from "../components/ChakraTable";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
@@ -9,9 +9,12 @@ export default function HomePage() {
       <Box h="100vh">
         <DarkModeSwitch />
         <Center h="100%">
-          <Box shadow="md">
-            <ChakraTable />
-          </Box>
+          <VStack>
+            <Heading>Chakra + React Table</Heading>
+            <Box shadow="md">
+              <ChakraTable />
+            </Box>
+          </VStack>
         </Center>
       </Box>
     </>
